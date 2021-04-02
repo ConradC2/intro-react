@@ -49,9 +49,6 @@ class App extends React.Component {
         let tabChoice = < div / > ;
 
 
-
-        /* Change below to render students*/
-
         if (this.state.buttonClicked === "students") {
             tabChoice = ( <
                 List placeholder = "Add Assignment..."
