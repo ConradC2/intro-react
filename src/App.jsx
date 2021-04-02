@@ -1,6 +1,6 @@
 import React from "react";
 import Table from "./Table";
-/*Add import statement here*/
+import List from "./List";
 
 class App extends React.Component {
     constructor(props) {
@@ -92,8 +92,8 @@ class App extends React.Component {
             <
             div className = "Box-header" >
             <
-            h3 className = "Box-title d-flex flex-justify-center" > GradeBook < /h3> <
-            /div> <
+            h3 className = "Box-title d-flex flex-justify-center" > GradeBook < /h3> < /
+            div > <
             /div> <
             nav className = "UnderlineNav d-flex flex-justify-center" >
             <
@@ -101,22 +101,25 @@ class App extends React.Component {
             <
             button className = "btn btn-primary"
             onClick = {
-                () => this.handleButtonClicked("assignments") } >
+                () => this.handleButtonClicked("assignments")
+            } >
             Assignments <
             /button> <
             button className = "btn btn-primary"
             onClick = {
-                () => this.handleButtonClicked("students") } >
+                () => this.handleButtonClicked("students")
+            } >
             Students <
             /button> <
             button className = "btn btn-primary"
             onClick = {
-                () => this.handleButtonClicked("grades") } >
+                () => this.handleButtonClicked("grades")
+            } >
             Grades <
-            /button> <
-            /div> <
-            /nav> { tabChoice } <
-            /div>
+            /button> < /
+            div > <
+            /nav> { tabChoice } < /
+            div >
         );
     }
 }
